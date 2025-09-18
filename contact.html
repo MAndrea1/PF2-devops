@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="cupcake, cupcakes, unicorn, rainbow">
+    <meta name="description" content="Delicious cupcakes">
+    <script src="https://kit.fontawesome.com/e9b5d46f07.js" crossorigin="anonymous"></script>
+    <title>Cute Cupcake Corner - our cupcakes</title>
+    <link rel="icon" href="img/Cupcake_icon-icons.com_68756.ico">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./cupcakes.html">Cupcakes</a></li>        
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+     </nav>
+
+
+    <main>
+        <section class="container">
+            <h3>Custom order</h3>
+            <div class="formulario">
+                <form action="https://formspree.io/f/xeqnzzza" method="POST">
+                    <fieldset>
+                        <legend><i class="fa-solid fa-envelope"></i>  Sender</legend>
+                    <label for="name">First name: </label>
+                    <input id="name" type="text" name="name" required>
+                    <br>
+                    <br>
+                    <label for="name">Last name: </label>
+                    <input id="name" type="text" name="name" required>
+                    <br>
+                    <br>
+                    <label for="name">E-mail: </label>
+                    <input id="name" type="email" name="name" required>
+
+                </fieldset>
+
+                    <fieldset>
+                        <legend><i class="fa-solid fa-truck-fast"></i>  Delivery data</legend>
+                    <label>Delivery date:
+                        <input type="date">
+                    </label>
+                    <br>
+                    <br>
+                    <input type="checkbox" id="cbox1" value="polvo de estrellas"> <label for="cbox1">Add Stardust</label>
+                    <br>
+                    <input type="checkbox" id="cbox2" value="glaseado arco iris"> <label for="cbox2">Add Rainbow Glase</label>
+                    <br>
+                    <br>
+                    <label>Choose cupcakes:
+                        <select name="options">
+                            <option value="choose" selected></option>
+                            <option value="pink">Pink Cupcake</option>
+                            <option value="blue">Blue Sky Cupcake</option>
+                            <option value="rainbow">Rainbow Cupcake</option>
+                        </select>
+                    </label>
+                    <br>
+                    <br>
+                    <input type="radio" name="radio"><label for="mañana">Morning delivery</label>
+                    <br>
+                    <input type="radio" name="radio"><label for="tarde">Afternoon delivery</label>
+                    <br>
+                    <input type="radio" name="radio"><label for="noche">Evening delivery</label>
+                    <br>
+                    <br>
+                    <label>Custom dedication:
+                        <br>
+                        <textarea name="notas especiales" cols="50" rows="10"></textarea>
+                    </label>    
+                    </fieldset>
+
+                    <fieldset>
+                        <legend><i class="fa-solid fa-pen-nib"></i>  Additional Notes</legend>
+                        <label>Box special label:
+                            <input type="text" name="mensaje especial" id="surname">
+                        </label>
+                        <br>
+                        <br>                        
+                        <label>Box:
+                            <input type="text" name="caja especial" id="surname">
+                        </label>
+                        <label>Color:
+                            <input type="color">
+                        </label>
+                    </fieldset>
+
+                    <br>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+            <h3 id="TeaRoom">Our Tea Room</h3>
+            <div class="formulario">
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13132.30017277888!2d-58.45159315!3d-34.627543849999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca23c666659d%3A0xbc49c2e1846a2565!2sPlaza%20del%20%C3%81ngel%20Gris%20-%20CABA!5e0!3m2!1ses!2sar!4v1650333062367!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <p>cutecupcakecorner - CaC project - 2022</p>
+    </footer>
+    
+</body>
+</html>

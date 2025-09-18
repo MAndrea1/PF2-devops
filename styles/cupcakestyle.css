@@ -1,0 +1,79 @@
+.cupcakelist{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+}
+
+.cupcakes{
+    display: flex;
+    margin-top: 8rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    text-align: center;
+    margin-bottom: 5rem;
+    flex-direction: column;
+}
+
+img{
+    width: 100%;
+    height: 40rem;
+    object-fit: cover;
+}
+
+.title{
+    padding-top: 1rem;
+    color: brown;
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .cupcakes{
+        width: 80%;
+        height: 100%;
+        flex-direction: row;
+    }    
+
+    .card{
+        width: 30%;
+        height: 45%;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .cupcakes{
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+    }    
+
+    .card{
+        width: 40%;
+        height: 45%;
+    }
+
+    img{
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .cupcakelist{
+        margin-top: 5rem;
+    }
+
+    .cupcakes{
+        width: 90%;
+        height: 100%;
+        flex-direction: column;
+    }
+    
+    .card{
+        width: 100%;
+        height: 100%;
+    }
+}

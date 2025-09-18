@@ -1,0 +1,345 @@
+html{
+    font-size: 62.5%; /*10*/
+
+}
+
+body {
+    width: 100%;
+ }
+
+ p{
+    font-size: 2rem;
+ }
+
+ h2{
+     font-size: 5rem;
+     color: #e05d5d;
+ }
+
+ h3{
+     font-size: 4rem;
+     color: #e05d5d;
+ }
+
+ h4{
+    font-size: 3rem;
+    color: #e05d5d;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+section a {
+    color: #e05d5d;    
+    font-weight: 900;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Itim', cursive;
+}
+
+header h1 {
+    font-size: 7rem;
+    text-transform: uppercase;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 50vh;
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/15/02/08/cupcakes-1825136_960_720.jpg");
+    background-size: cover;
+    color: white;
+    flex-direction: column;
+}
+
+.box {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 1;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 20px 40px;
+}
+
+nav {
+    background-color:#FF9292;
+}
+
+nav ul {
+    font-size: 2.5rem;
+    list-style-type: none;
+    margin-top: 0;;
+    margin-right: 20%;
+    margin-left: 20%;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul li {
+  padding: 0.5rem;
+  flex: auto;
+  text-align: center;
+}
+nav ul li a {
+    color: black;
+    outline: none;
+    text-decoration: none;
+}
+nav ul li a:hover {
+  cursor: pointer;
+  color: white;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    header{
+        height: 100vh;
+    }
+    section{
+        flex-direction: column;
+    }
+    .seccion1{
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+    .seccion1 .ad1{
+        width: 100%;
+        height: 100vh;
+    }
+    .seccion1 .ad2{  
+        width: 90%;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .seccion2{
+        padding-bottom: 5rem;
+    }
+    .seccion2 .ad1{
+        width: 100%;
+        height: 100vh;
+    }
+    .seccion2 .ad2{  
+        margin-top: 2rem;
+        height: 40%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .ad2 ul {
+        margin-top: 2rem;
+        column-count: 1;
+    }
+
+    .ad2 li {
+        flex-grow: 1;
+    }
+    
+    .seccion3{
+        flex-direction: column;
+        height: 100vh;
+        padding-bottom:5rem
+    }
+    .seccion3 .ad1{
+        width: 90%;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+    .seccion3 .ad2{  
+        width: 100%;
+        height: 100vh;
+        order: -1;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    section {
+        padding-top: 5rem;
+    }
+    section div{
+        max-width: 90rem;
+    }
+    .seccion1{
+        flex-direction: row;
+        padding-bottom: 5rem;
+        height: 70rem;
+    }
+    .seccion1 .ad1{
+        width: 50%;
+        height: 100%;
+        padding-left: 2rem;
+    }
+    .seccion1 .ad2{  
+        margin-left: 2rem;
+        width: 30%;
+    }
+
+    .seccion2{
+        flex-direction: column;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        height: 50rem;
+    }
+    .seccion2 .ad1{
+        width: 100%;
+        height: 100%;
+    }
+    .seccion2 .ad2{  
+        margin-top: 2rem;
+        height: 40%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .ad2 ul {
+        margin-top: 2rem;
+        column-count: 2;
+    }
+
+    .ad2 li {
+        flex-grow: 2;
+    }
+
+    .seccion3{
+        flex-direction: row;
+        height: 100vh;
+        padding-bottom:5rem
+    }
+    .seccion3 .ad1{
+        width: 30%;
+        text-align: right;
+        margin-right: 3rem;
+    }
+    .seccion3 .ad2{  
+        width: 50%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    section {
+        padding-top: 5rem;
+        padding-bottom: 5rem;        
+    }
+    section div{
+        max-width: 120rem;
+    }
+    .seccion1{
+        height: 70rem;
+        flex-direction: row;
+    }
+    .seccion1 .ad1{
+        width: 50%;
+        height: 100%;
+    }
+    .seccion1 .ad2{  
+        margin-left: 2rem;
+        width: 30%;
+    }
+
+    .seccion2{
+        height: 67rem;
+        flex-direction: column;
+    }
+    .seccion2 .ad1{
+        width: 100%;
+        height: 100%;
+    }
+    .seccion2 .ad2{  
+        width: 100%;
+        height: 20%;
+        text-align: center;
+    }
+
+    .ad2 ul {
+        margin-top: 2rem;
+        column-count: 3;
+    }
+
+    .ad2 li {
+        flex-grow: 3;
+    }
+
+    .seccion3{
+        flex-direction: row;
+        height: 100vh;
+    }
+    .seccion3 .ad1{
+        width: 30%;
+        text-align: right;
+        margin-right: 3rem;
+    }
+    .seccion3 .ad2{  
+        width: 50%;
+        height: 100%;
+    }
+}
+
+section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.seccion1{
+    background-color: white;
+}
+
+.seccion2{
+    background-color: #FFF9B6;
+    flex-direction: column;
+}
+
+.seccion3{
+    background-color: #FFE699;
+}
+
+.seccion1 .ad1{
+    background-image: url("https://cdn.pixabay.com/photo/2022/01/05/13/13/muffins-6917111_960_720.jpg");
+    background-size: cover;    
+}
+
+.seccion2 .ad1{
+    background-image: url("https://cdn.pixabay.com/photo/2020/04/24/14/39/cupcakes-5087116_960_720.jpg");
+    background-size: cover;    
+}
+
+.seccion3 .ad2{
+    background-image: url("https://cdn.pixabay.com/photo/2020/10/14/13/58/cupcakes-5654436_960_720.jpg");
+    background-size: cover;    
+}
+
+.ad2 ul {
+        padding: 0;
+        margin-top: 2rem;
+        list-style: none;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: large;
+    }
+
+footer {
+    text-align: center;
+    background-color:#FF9292;
+    padding: 4rem;
+}
+
+footer p{
+    font-size: medium;
+}
+
